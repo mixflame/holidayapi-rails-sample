@@ -1,4 +1,10 @@
 <strong>Holiday API Sample</strong>
 <p>Delivers results from <a href="https://holidayapi.com">HolidayApi</a>!</p>
 
-<%= debug @response %>
+<strong>Get 2019 Holidays for a Country (2 letter code)</strong>
+<%= form_tag( '/holidays', method: :get) do %>
+    <%= label_tag ("country") do %>
+        Country: <%= text_field_tag ("country") %>
+    <% end %>
+    <%= submit_tag 'Get Holidays' %>
+<% end %>

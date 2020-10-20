@@ -4,11 +4,15 @@ class HolidayController < ApplicationController
 
 
     def index
+
+    end
+
+    def holidays
         hapi = HolidayAPI::V1.new('24cbebb4-e8de-426f-a68d-fe6032446dfd')
 
         parameters = {
           # Required
-          'country' => 'US',
+          'country' => params[:country],
           'year'    => 2019,
           # Optional
           # 'month'    => 7,

@@ -1,0 +1,10 @@
+<h1>2019 Holidays retrieved from HolidayApi</h1>
+<ul>
+<% @response["holidays"].each do |holiday| %>
+    <li>
+    <p><strong><%= holiday["name"] %></strong></p>
+    <p>Date: <%= holiday["date"] %></p>
+    <p>Observed: <%= holiday["observed"] %></p>
+    </li>
+<% end %>
+</ul>
