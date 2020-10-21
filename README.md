@@ -7,3 +7,5 @@
 * Configuration: Just install dependencies, `bundle install` and run `rails s`
 
 * No database setup necessary
+
+* After running head to http://localhost:3000/
