@@ -1,0 +1,14 @@
+<h1>Languages</h1>
+
+<ul>
+
+<% @response["languages"].each do |language| %>
+
+    <li>
+        <strong><%= language["name"] %></strong>
+        <p>Code: <strong><%= language["code"] %></strong></p>
+    </li>
+
+<% end %>
+
+</ul>

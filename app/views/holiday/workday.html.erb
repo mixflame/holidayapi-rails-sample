@@ -1,0 +1,10 @@
+<h1>Get Workday</h1>
+
+<p>Country: <%= @country %></p>
+<p>Start: <%= @start %></p>
+<p>Days: <%= @days %></p>
+
+
+    Work will resume <strong><%= @response['workday']['date'] %></strong>,
+     a <strong><%= @response['workday']['weekday']['name'] %></strong> 
+     (day <%= @response['workday']['weekday']['numeric'] %> of the week)
